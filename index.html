@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://jiboli.github.io/notepad-pwa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiboliPAD</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <link href="styles/all.css" rel="stylesheet">
+
+  <!-- TODO add manifest here -->
+  
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">JiboliPAD</h1>
+    <button id="new" class="headerButton" aria-label="Novo" ></button>
+    <button id="share" class="headerButton" aria-label="Compartilhar"></button>
+    <button id="download" class="headerButton" aria-label="Salvar"></button>
+    <button id="bitly" class="headerButton" aria-label="Compartilhar com o Bitly"></button>
+    <button id="inverte" class="headerButton" aria-label="Encriptar"></button>
+    <button id="decrypt" class="headerButton" aria-label="Decriptar"></button>
+
+
+  </header>
+
+  <main class="main">
+    <div class="card cardTemplate campoTexto">
+      <div class="description">
+        <textarea class="description" spellcheck="false" id="t">Isso é um bloco de notas, escreva o que quiser nele, não vou saber o que você escreveu, ao mesmo tempo que não vou ser derrubado pela 💩 que vc escreveu.</textarea>
+    
+        </div>
+    </div>
+    
+  </main>
+
+  <div class="new-dialog-container">
+    <div class="dialog">
+      <div class="dialog-title">Novo Documento</div>
+      <div class="dialog-body">
+        
+  Deseja criar um novo documento? Todo o progresso será perdido!
+
+      </div>
+      <div class="dialog-buttons">
+        <button id="novoDocumento" class="button">Criar Novo</button>
+        <button id="cancelar" class="button">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <div class="share-dialog-container">
+      <div class="dialog">
+        <div class="dialog-title">Compartilhar</div>
+        <div class="dialog-body">
+          
+        <input class="entrada" id='urlInput'>
+        <br>Copiar para a Clipboard: <button id='clipboard' class="clipboardButton" data-clipboard-target='#urlInput'></button>
+  
+        </div>
+        <div class="dialog-buttons">
+          
+          <button id="cancelar2" class="button">Fechar</button>
+        </div>
+      </div>
+    </div>
+    
+      <div class="decrypt-dialog-container">
+          <div class="dialog">
+            <div class="dialog-title">Decodificar Hash</div>
+            <div class="dialog-body">
+              
+        Utilize o campo abaixo para Decodificar a Hash:<br>
+            <textarea id="decode"></textarea>
+            </div>
+            <div class="dialog-buttons">
+                <button id="decodificar" class="button">Decodificar</button>
+              <button id="cancelar3" class="button">Cancelar</button>
+            </div>
+          </div>
+        </div>
+        <div class="bitly-dialog-container">
+            <div class="dialog">
+              <div class="dialog-title">Encurtar URL e Compartilhar</div>
+              <div class="dialog-body">
+                  <input class="entrada" id='urlInput2'><br>
+          Nota, seu arquivo deixou de ser privado, e será armazenado em um servidor
+          <br>Copiar para a Clipboard: <button id='clipboard2' class="clipboardButton2" data-clipboard-target='#urlInput2'></button>
+        
+              </div>
+              <div class="dialog-buttons">
+
+                <button id="cancelar4" class="button">Cancelar</button>
+              </div>
+            </div>
+          </div>
+          <div class="inverte-dialog-container">
+              <div class="dialog">
+                  <div class="dialog-title">Codificar Hash</div>
+                  <div class="dialog-body">
+                    
+              Utilize o campo abaixo para Codificar a Hash:<br>
+                  <textarea id="code"></textarea>
+                  </div>
+                  <div class="dialog-buttons">
+                      <button id="codificar" class="button">Codificar</button>
+                  <button id="cancelar5" class="button">Fechar</button>
+                </div>
+              </div>
+            </div>
+         
+
+  
+
+  <!-- Uncomment the line below when ready to test with fake data -->
+  <script language="javascript" src="scripts/clipboard.min.js"></script>
+  <script language="javascript" src="scripts/lz-string.min.js"></script>
+  <script src="scripts/app.js" async></script>
+  
+
+</body>
+</html>
