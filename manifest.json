@@ -1,0 +1,16 @@
+{
+  "name": "Jiboli Notepad",
+  "short_name": "JiboliPad",
+  "icons": [
+      {
+        "src": "/images/icons/icon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      }
+      ],
+  "start_url": "/?homescreen=1",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ececec",
+  "theme_color": "#3F51B5"
+}
