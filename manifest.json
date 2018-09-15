@@ -39,7 +39,7 @@
       }
       ],
   "start_url": "/",
-  "scope": "/",
+  "scope": "/index.html",
   "display": "standalone",
   "background_color": "#ececec",
   "theme_color": "#3F51B5"
