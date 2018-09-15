@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="pt"></html>
 <head>
   <meta charset="utf-8">
   <meta name="Description" content="Notepad offline que encripta o texto.">
@@ -41,7 +41,7 @@
   <main class="main">
     <div class="card cardTemplate campoTexto">
       <div class="description">
-        <textarea class="description" spellcheck="false" id="t">Isso é um bloco de notas, escreva o que quiser nele, não vou saber o que você escreveu, ao mesmo tempo que não vou ser derrubado pela 💩 que vc escreveu.
+        <textarea class="description" aria-label="Conteúdo texto" spellcheck="false" id="t">Isso é um bloco de notas, escreva o que quiser nele, não vou saber o que você escreveu, ao mesmo tempo que não vou ser derrubado pela 💩 que vc escreveu.
         
           Função dos Botões (em ordem):
              📄 Novo Arquivo
@@ -79,7 +79,7 @@
         <div class="dialog-title">Compartilhar</div>
         <div class="dialog-body">
           
-        <input class="entrada" id='urlInput'>
+        <input aria-label="Link para compartilhar:" class="entrada" id='urlInput'>
         <br>Copiar para a Clipboard: <button id='clipboard' class="clipboardButton" aria-label="Copiar para a Clipboard" data-clipboard-target='#urlInput'></button>
   
         </div>
@@ -96,7 +96,7 @@
             <div class="dialog-body">
               
         Utilize o campo abaixo para Decodificar a Hash:<br>
-            <textarea id="decode"></textarea>
+            <textarea id="decode" aria-label="Entrada do texto para codificação" ></textarea>
             </div>
             <div class="dialog-buttons">
                 <button id="decodificar" class="button">Decodificar</button>
@@ -108,7 +108,7 @@
             <div class="dialog">
               <div class="dialog-title">Encurtar URL e Compartilhar</div>
               <div class="dialog-body">
-                  <input class="entrada" id='urlInput2'><br>
+                  <input class="entrada" aria-label="Url Curta:" id='urlInput2'><br>
           Nota, seu arquivo deixou de ser privado, e será armazenado em um servidor
           <br>Copiar para a Clipboard: <button id='clipboard2' class="clipboardButton2" aria-label="Copiar para a Clipboard" data-clipboard-target='#urlInput2'></button>
         
@@ -125,7 +125,7 @@
                   <div class="dialog-body">
                     
               Utilize o campo abaixo para Codificar a Hash:<br>
-                  <textarea id="code"></textarea>
+                  <textarea id="code" aria-label="Codigo para codificar:"></textarea>
                   </div>
                   <div class="dialog-buttons">
                       <button id="codificar" class="button">Codificar</button>
