@@ -321,7 +321,7 @@ function processRequest(e){
         urlInput2.style.display = "block";
     urlInput2.select();
     }else{
-      urlInput2.value = "Erro 500! Teste talvez?";            
+      urlInput2.value = "Modo Offline! Fique online para utilizar.";            
         urlInput2.style.display = "block";
     urlInput2.select();
     //xhr.DONE;
