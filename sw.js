@@ -1,4 +1,4 @@
-const version = "0.2.33";
+const version = `0.2.33`;
 const cacheName = `jibolipad-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
