@@ -9,7 +9,7 @@ self.addEventListener('install', e => {
         `/styles/inline.css`,
         `/scripts/app.js`,
         `/scripts/clipboard.min.js`,
-        `/scripts/lz-string.js`,
+        `/scripts/lz-string.min.js`,
         `/images/icons/icon-32x32.png`,
         `/images/svg/file.svg`,
         `/images/svg/external-link-symbol.svg`,
