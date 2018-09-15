@@ -6,6 +6,7 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `index.html`,
+        `manifest.json`,
         `styles/inline.css`,
         `scripts/app.js`,
         `scripts/clipboard.min.js`,
