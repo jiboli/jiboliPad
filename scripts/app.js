@@ -180,20 +180,6 @@ if(content) {
    *
    ****************************************************************************/
 
-
-  app.updateForecastCard = function(data) {
-    var conteudo;
-    var conteudo_hash;
-    
-   
-    if (app.isLoading) {
-      app.spinner.setAttribute('hidden', true);
-      app.container.removeAttribute('hidden');
-      app.isLoading = false;
-    }
-    app.isLoading = false;
-  };
-
   /*****************************************************************************
    *
    * Methods for dealing with the model
