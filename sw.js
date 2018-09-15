@@ -5,20 +5,20 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
-        `/index.html`,
-        `/styles/inline.css`,
-        `/scripts/app.js`,
-        `/scripts/clipboard.min.js`,
-        `/scripts/lz-string.min.js`,
-        `/images/icons/icon-32x32.png`,
-        `/images/svg/file.svg`,
-        `/images/svg/external-link-symbol.svg`,
-        `/images/svg/link-symbol.svg`,
-        `/images/svg/padlock.svg`,
-        `/images/svg/padlock-unlock.svg`,
-        `/images/svg/paste-from-clipboard.svg`,
-        `/images/svg/save-file-option.svg`,
-        `/images/svg/share-symbol.svg`
+        `index.html`,
+        `styles/inline.css`,
+        `scripts/app.js`,
+        `scripts/clipboard.min.js`,
+        `scripts/lz-string.min.js`,
+        `images/icons/icon-32x32.png`,
+        `images/svg/file.svg`,
+        `images/svg/external-link-symbol.svg`,
+        `images/svg/link-symbol.svg`,
+        `images/svg/padlock.svg`,
+        `images/svg/padlock-unlock.svg`,
+        `images/svg/paste-from-clipboard.svg`,
+        `images/svg/save-file-option.svg`,
+        `images/svg/share-symbol.svg`
       ])
           .then(() => self.skipWaiting());
     })
